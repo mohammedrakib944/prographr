@@ -23,7 +23,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="grid grid-cols-10 py-3">
+    <nav className="layout grid grid-cols-10 py-3">
       {/* Mobile view */}
       <div className="lg:hidden drawer">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
