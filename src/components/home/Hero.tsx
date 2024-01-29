@@ -11,7 +11,7 @@ const Hero = () => {
         {/* text section */}
         <div className="pt-12 lg:pt-0 flex flex-col gap-2 items-center lg:items-start justify-center">
           <p className="tracking-[0.5rem] text-sm text-primary">PRO PREMIUM</p>
-          <h1 className="text-5xl tracking-wide text-accent leading-[50px] text-center lg:text-start">
+          <h1 className="text-5xl text-accent leading-[50px] text-center lg:text-start">
             Fully Editable <br /> Template Starting <br />
             From Only $2
           </h1>

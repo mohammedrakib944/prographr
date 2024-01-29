@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 
 const gellix = localFont({
   src: "../../public/fonts/Gellix/Gellix-Medium.ttf",
-});
-
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {

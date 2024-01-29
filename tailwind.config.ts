@@ -13,7 +13,7 @@ const config: Config = {
         blog_light: {
           primary: "#7666E3",
           secondary: "#032041",
-          accent: "#2F1C6A",
+          accent: "#35198c",
           neutral: "#717066",
           "base-100": "#FFFFFF",
           "base-200": "#f1f1f1",
@@ -21,7 +21,7 @@ const config: Config = {
           success: "#00d600",
           warning: "#ef4444",
           error: "#0b397f4d",
-        }
+        },
       },
     ],
   },
