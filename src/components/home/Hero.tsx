@@ -35,10 +35,10 @@ const Hero = () => {
                 <p className="w-[50px] h-[50px] bg-primary grid place-items-center text-sm text-white rounded-full border-[4px] border-white">
                   Ai
                 </p>
-                <p className="w-[50px] h-[50px] bg-primary grid place-items-center text-white rounded-full border-[4px] border-white text-sm -ml-4">
+                <p className="w-[50px] h-[50px] bg-primary grid place-items-center text-white rounded-full border-[4px] border-white text-sm -ml-3">
                   Ps
                 </p>
-                <p className="w-[50px] h-[50px] bg-primary grid place-items-center text-white rounded-full border-[4px] border-white text-sm -ml-4">
+                <p className="w-[50px] h-[50px] bg-primary grid place-items-center text-white rounded-full border-[4px] border-white text-sm -ml-3">
                   Id
                 </p>
               </div>
