@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Hero />
       <CounterSection />
-      <div className="layout pt-32">
+      <div className="layout pt-24">
         <h2 className="text-3xl text-accent text-center">
           What <strong>makes us better</strong>
         </h2>

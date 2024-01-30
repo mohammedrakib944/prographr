@@ -32,8 +32,8 @@ const CounterSection = () => {
   }, [inView, sells]);
 
   return (
-    <section className="w-full bg-gray-200 py-16">
-      <div className="layout flex justify-center gap-6 lg:gap-32" ref={ref}>
+    <section className="layout mx-3 lg:mx-auto bg-gray-200 py-16 rounded-box mt-24">
+      <div className="flex justify-center gap-6 lg:gap-32" ref={ref}>
         <div className="text-primary text-center">
           <h1 className="text-2xl lg:text-5xl">{sells}+</h1>
           <p className="text-xs">Template sells till now</p>
