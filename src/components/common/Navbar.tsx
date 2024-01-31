@@ -76,7 +76,12 @@ const Navbar = () => {
 
       {/* Buttons */}
       <div className="col-span-6 lg:col-span-3 flex items-center gap-3 justify-end">
-        <Button text="Sign in" icon={<FaArrowRight />} outline />
+        <Button
+          text="Sign in"
+          className="shadow-none bg-neutral"
+          icon={<FaArrowRight />}
+          outline
+        />
         <Button text="Sign up" icon={<FaArrowRight />} />
       </div>
     </nav>

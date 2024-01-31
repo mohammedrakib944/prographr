@@ -16,7 +16,7 @@ const Button = ({
   if (outline) {
     return (
       <button
-        className={`btn bg-gray-200 capitalize rounded-full font-light text-accent gap-4 ${className}`}
+        className={`btn bg-neutral capitalize rounded-full font-light text-accent gap-4 ${className}`}
       >
         {text} {icon && <span className="">{icon}</span>}
       </button>

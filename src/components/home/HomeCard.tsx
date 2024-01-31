@@ -10,7 +10,7 @@ type CardProps = {
 };
 const HomeCard = ({ title, icon, para, link }: CardProps) => {
   return (
-    <div className="bg-gray-200 max-w-[380px] px-6 py-10 rounded-box">
+    <div className="bg-neutral max-w-[380px] p-6 rounded-[30px]">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl text-accent">{title}</h2>
         <div className="w-[65px] h-[65px] rounded-full bg-primary text-white flex items-center justify-center text-2xl">

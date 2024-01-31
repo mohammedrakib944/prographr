@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
+import { Roboto } from "next/font/google";
 
-const gellix = localFont({
-  src: "../../public/fonts/Gellix/Gellix-Medium.ttf",
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
 });
+
+// const gellix = localFont({
+//   src: "../../public/fonts/Gellix/Gellix-Medium.ttf",
+// });
 
 export const metadata: Metadata = {
   title: "Prographr",
@@ -19,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={gellix.className}>
+      <body className={roboto.className}>
         <main className="">
           <Navbar />
           {children}
