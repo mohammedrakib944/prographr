@@ -14,7 +14,7 @@ const TemplateCreator = () => {
       </h2>
       <div className="mt-8">
         <div className="max-w-[740px] mx-auto text-accent grid md:grid-cols-2 lg:grid-cols-4 gap-1 bg-neutral rounded-[25px] lg:rounded-full">
-          <button className="min-w-[187px] rounded-full py-4 px-8 bg-primary text-white ">
+          <button className="min-w-[193px] rounded-full py-4 px-8 bg-primary text-white ">
             Check Guidelines
           </button>
           <button className="rounded-full py-4 px-4 hover:bg-accent/50 hover:text-white">
