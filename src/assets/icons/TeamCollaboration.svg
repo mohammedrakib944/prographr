@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145" height="145" viewBox="0 0 145 145">
+  <defs>
+    <clipPath id="clip-Team_Collaboration">
+      <rect width="145" height="145"/>
+    </clipPath>
+  </defs>
+  <g id="Team_Collaboration" data-name="Team Collaboration" clip-path="url(#clip-Team_Collaboration)">
+    <rect width="145" height="145" fill="#7666E3"/>
+    <g id="Group_287" data-name="Group 287" transform="translate(-178.134 -494.5)">
+      <circle id="Ellipse_163" data-name="Ellipse 163" cx="9.657" cy="9.657" r="9.657" transform="translate(230.666 548.5)" fill="none" stroke="#edeef7" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Path_171" data-name="Path 171" d="M222.147,630.723v-7.178s-.639-4.415,6.913-6.852l10.211-3.157a2.519,2.519,0,0,1,1.445-.013l10.926,3.17c7.552,2.436,6.912,6.852,6.912,6.852v7.178" transform="translate(0 -45.647)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <circle id="Ellipse_164" data-name="Ellipse 164" cx="7.965" cy="7.965" r="7.965" transform="translate(257.039 551.812)" fill="none" stroke="#edeef7" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Path_172" data-name="Path 172" d="M347.718,614.826l4.716-1.432a2.075,2.075,0,0,1,1.192-.01L362.637,616c6.229,2.01,5.7,5.651,5.7,5.651v5.92" transform="translate(-88.298 -45.562)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

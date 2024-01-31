@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145" height="145" viewBox="0 0 145 145">
+  <defs>
+    <clipPath id="clip-Creativity">
+      <rect width="145" height="145"/>
+    </clipPath>
+  </defs>
+  <g id="Creativity" clip-path="url(#clip-Creativity)">
+    <rect width="145" height="145" fill="#7666E3"/>
+    <g id="Group_667" data-name="Group 667" transform="translate(4.634 3.615)">
+      <path id="Path_186" data-name="Path 186" d="M392.382-1648.653,377.207-1673.6l-15.174,24.948a24.891,24.891,0,0,1,10.744,7.315h8.861A24.891,24.891,0,0,1,392.382-1648.653Z" transform="translate(-309.42 1733.113)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="Line_4" data-name="Line 4" x2="3.685" transform="translate(39 76.665)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_5" data-name="Line 5" y1="3.685" transform="translate(67.788 47)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_6" data-name="Line 6" x2="3.685" transform="translate(92.709 76.665)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_7" data-name="Line 7" y1="2.606" x2="2.606" transform="translate(84.908 56.908)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_8" data-name="Line 8" x1="2.606" y1="2.606" transform="translate(48.036 56.908)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <circle id="Ellipse_171" data-name="Ellipse 171" cx="2.563" cy="2.563" r="2.563" transform="translate(65.31 76.177)" fill="none" stroke="#edeef7" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_9" data-name="Line 9" y1="16.665" transform="translate(67.872 59.512)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

@@ -4,9 +4,10 @@ import Hero from "@/components/home/Hero";
 import HomeCard from "@/components/home/HomeCard";
 import TemplateCreator from "@/components/home/TemplateCreator";
 import Testimonial from "@/components/home/Testimonial";
-import { BsVectorPen } from "react-icons/bs";
-import { MdPeople } from "react-icons/md";
-import { RxAvatar } from "react-icons/rx";
+
+import Creativity from "@/assets/icons/Creativity.svg";
+import TeamCollaboration from "@/assets/icons/TeamCollaboration.svg";
+import Professionalism from "@/assets/icons/Professionalism.svg";
 
 export default function Home() {
   return (
@@ -20,19 +21,19 @@ export default function Home() {
         <div className="py-10 grid place-items-center gap-4 lg:grid-cols-3">
           <HomeCard
             title="Creativity"
-            icon={<BsVectorPen />}
+            icon={Creativity}
             para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus temporibus maxime."
             link=""
           />
           <HomeCard
             title="Team Collaboration"
-            icon={<MdPeople />}
+            icon={TeamCollaboration}
             para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus temporibus maxime."
             link=""
           />
           <HomeCard
             title="Professionalism"
-            icon={<RxAvatar />}
+            icon={Professionalism}
             para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus temporibus maxime."
             link=""
           />

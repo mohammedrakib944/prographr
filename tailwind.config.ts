@@ -13,8 +13,8 @@ const config: Config = {
         blog_light: {
           primary: "#7666E3",
           secondary: "#032041",
-          accent: "#35198c",
-          neutral: "#EEEFF8",
+          accent: "#2F1C6A",
+          neutral: "#EDEEF7",
           "base-100": "#FFFFFF",
           "base-200": "#f1f1f1",
           info: "#58a6ff",

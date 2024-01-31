@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145" height="145" viewBox="0 0 145 145">
+  <defs>
+    <clipPath id="clip-Professionalism">
+      <rect width="145" height="145"/>
+    </clipPath>
+  </defs>
+  <g id="Professionalism" clip-path="url(#clip-Professionalism)">
+    <rect width="145" height="145" fill="#7666E3"/>
+    <g id="Group_173" data-name="Group 173" transform="translate(-1033.94 907.471)">
+      <path id="Path_177" data-name="Path 177" d="M1135.019-811.2a14.34,14.34,0,0,1,8.755,13.209v5.5a4.787,4.787,0,0,1-4.787,4.786h-15.821l-6.495-5.9" transform="translate(-16.81 -25.177)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_178" data-name="Path 178" d="M1097.171-787.705h-6.635a4.786,4.786,0,0,1-4.786-4.786v-5.5A14.339,14.339,0,0,1,1094.5-811.2" transform="translate(0 -25.177)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <circle id="Ellipse_166" data-name="Ellipse 166" cx="9.069" cy="9.069" r="9.069" transform="translate(1097.37 -857.512)" fill="none" stroke="#edeef7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_179" data-name="Path 179" d="M1142.489-796.961l1.135,2.3a.565.565,0,0,0,.425.309l2.537.369a.564.564,0,0,1,.313.962l-1.836,1.789a.564.564,0,0,0-.162.5l.433,2.526a.564.564,0,0,1-.819.6l-2.269-1.193a.563.563,0,0,0-.524,0l-2.27,1.193a.564.564,0,0,1-.819-.6l.434-2.526a.566.566,0,0,0-.162-.5l-1.836-1.789a.564.564,0,0,1,.313-.962l2.536-.369a.566.566,0,0,0,.426-.309l1.134-2.3A.564.564,0,0,1,1142.489-796.961Z" transform="translate(-27.805 -32.746)" fill="#edeef7"/>
+    </g>
+  </g>
+</svg>
