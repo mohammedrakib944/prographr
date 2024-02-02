@@ -8,6 +8,7 @@ import Testimonial from "@/components/home/Testimonial";
 import Creativity from "@/assets/icons/Creativity.svg";
 import TeamCollaboration from "@/assets/icons/TeamCollaboration.svg";
 import Professionalism from "@/assets/icons/Professionalism.svg";
+import JoinCommunity from "@/components/home/JoinCommunity";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
       <TemplateCreator />
       <Cuttingedge />
       <Testimonial />
+      <JoinCommunity />
     </main>
   );
 }
