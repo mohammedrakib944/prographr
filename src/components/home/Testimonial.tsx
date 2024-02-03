@@ -41,7 +41,7 @@ const Testimonial = () => {
         Clients <strong>testimonial</strong>
       </h2>
 
-      <div className="mt-20 grid gap-4 gird-cols-1 lg:grid-cols-3">
+      <div className="mt-20 grid gap-10 lg:gap-4 gird-cols-1 lg:grid-cols-3">
         {TestimonialData.map((item) => (
           <Card data={item} />
         ))}

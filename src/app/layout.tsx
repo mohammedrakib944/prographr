@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/home/Footer";
 // import { Roboto } from "next/font/google";
 
 // const roboto = Roboto({
@@ -29,6 +30,7 @@ export default function RootLayout({
         <main className="">
           <Navbar />
           {children}
+          <Footer />
         </main>
       </body>
     </html>
