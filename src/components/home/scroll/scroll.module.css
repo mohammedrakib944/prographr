@@ -26,7 +26,6 @@
 }
 
 .scrolling {
-  box-shadow: inset 10px 10px 10px black;
   animation: varticleScroll 20s linear infinite backwards;
 }
 

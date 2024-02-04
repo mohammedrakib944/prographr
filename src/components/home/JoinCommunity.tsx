@@ -4,7 +4,7 @@ import React from "react";
 const JoinCommunity = () => {
   return (
     <div className="layout mb-20">
-      <div className="text-accent bg-neutral rounded-2xl pt-10 pb-24 lg:pb-20 px-12 grid gap-5 lg:gap-10 md:grid-cols-1 lg:grid-cols-2 lg:mb-36">
+      <div className="text-accent bg-neutral rounded-2xl pt-10 pb-24 lg:pb-20 px-5 lg:px-12 grid gap-5 lg:gap-10 md:grid-cols-1 lg:grid-cols-2 lg:mb-36">
         <div>
           <h3 className="text-3xl mb-10">Join Our Community</h3>
           <p>
