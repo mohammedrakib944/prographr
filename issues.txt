@@ -1,0 +1,2 @@
+slider add
+footer finish
