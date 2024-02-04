@@ -61,11 +61,11 @@ const SocialButton = ({
     <div className={className}>
       <Link
         href={link}
-        className="w-[160px] flex items-center justify-between gap-2 border shadow-lg py-2 pl-5 pr-2 font-bold bg-white hover:bg-primary duration-200 hover:text-white rounded-full"
+        className="w-[160px] flex items-center justify-between gap-2 py-2 pl-5 pr-2 font-bold bg-white hover:bg-primary duration-200 hover:text-white rounded-full"
       >
         {title}{" "}
-        <p className="w-10 h-10 text-2xl grid place-items-center font-extrabold text-white rounded-full bg-primary">
-          {icon}
+        <p className="w-10 h-10 text-xl grid place-items-center font-bold text-white rounded-full bg-primary">
+          <span className="-mt-1">{icon}</span>
         </p>
       </Link>
     </div>

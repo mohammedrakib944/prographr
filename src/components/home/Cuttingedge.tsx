@@ -1,17 +1,8 @@
 import React from "react";
 import Button from "../common/Button";
 import { FiArrowUpRight } from "react-icons/fi";
-import {
-  FaPenNib,
-  FaTools,
-  FaBookOpen,
-  FaFolderOpen,
-  FaPaintBrush,
-  FaPalette,
-  FaPatreon,
-  FaPagelines,
-  FaPaperPlane,
-} from "react-icons/fa";
+import Image from "next/image";
+import Tools from "@/assets/tools.jpg";
 
 const Cuttingedge = () => {
   return (
@@ -32,7 +23,7 @@ const Cuttingedge = () => {
           </button>
         </div>
       </div>
-      <div className="w-full flex flex-wrap px-10 items-center gap-8 lg:gap-0 justify-between my-20">
+      <div className="w-full flex items-center justify-between px-10 gap-8 lg:gap-0 my-20">
         <div className="text-accent max-w-[500px]">
           <h2 className="text-2xl">
             Collect <strong> Ideas</strong>
@@ -60,34 +51,12 @@ const Cuttingedge = () => {
             icon={<FiArrowUpRight />}
           />
         </div>
-        <div className="w-fit rounded-[30px] text-neutral border text-6xl grid grid-cols-3 px-14 py-10 gap-10">
-          <span className="hover:text-primary hover:drop-shadow-lg duration-200">
-            <FaTools />
-          </span>
-          <span className="hover:text-primary hover:drop-shadow-lg duration-200">
-            <FaBookOpen />
-          </span>
-          <span className="hover:text-primary hover:drop-shadow-lg duration-200">
-            <FaPaintBrush />
-          </span>
-          <span className="hover:text-primary hover:drop-shadow-lg duration-200">
-            <FaFolderOpen />
-          </span>
-          <span className="hover:text-primary hover:drop-shadow-lg duration-200">
-            <FaPenNib />
-          </span>
-          <span className="hover:text-primary hover:drop-shadow-lg duration-200">
-            <FaPalette />
-          </span>
-          <span className="hover:text-primary hover:drop-shadow-lg duration-200">
-            <FaPatreon />
-          </span>
-          <span className="hover:text-primary hover:drop-shadow-lg duration-200">
-            <FaPagelines />
-          </span>
-          <span className="hover:text-primary hover:drop-shadow-lg duration-200">
-            <FaPaperPlane />
-          </span>
+        <div>
+          <Image
+            className="max-w-[400px] opacity-65 w-fit rounded-[30px] border p-5"
+            src={Tools}
+            alt="Tools"
+          />
         </div>
       </div>
     </div>

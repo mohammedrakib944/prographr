@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Button from "../common/Button";
 import { FiArrowUpRight } from "react-icons/fi";
 import Road from "@/assets/road.svg";
@@ -6,28 +7,19 @@ import TemplateImage from "@/assets/slider/slider.png";
 import { FaCheck } from "react-icons/fa6";
 import Image from "next/image";
 
+function buttonStyle(current: number, slideNo: number) {
+  return `rounded-full py-4 px-4 hover:text-primary hover:scale-105 duration-100 ${
+    current === slideNo && "bg-primary text-white hover:text-white"
+  }`;
+}
+
 const TemplateCreator = () => {
-  return (
-    <div className="layout mt-14 lg:mt-52">
-      <h2 className="text-3xl text-accent text-center">
-        Become a <strong>template creator</strong>
-      </h2>
-      <div className="mt-20">
-        <div className="max-w-[740px] mx-auto text-accent grid md:grid-cols-2 lg:grid-cols-4 gap-1 bg-neutral rounded-[25px] lg:rounded-full">
-          <button className="min-w-[193px] rounded-full py-4 px-8 bg-primary text-white ">
-            Check Guidelines
-          </button>
-          <button className="rounded-full py-4 px-4 hover:text-primary hover:font-bold">
-            Submit template
-          </button>
-          <button className="rounded-full py-4 px-4 hover:text-primary hover:font-bold">
-            Wait for Approved
-          </button>
-          <button className="rounded-full py-4 px-8 hover:text-primary hover:font-bold">
-            Approved
-          </button>
-        </div>
-      </div>
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  let currentContent = null;
+
+  if (currentSlide === 0) {
+    currentContent = (
       <div className="max-w-[940px] mx-auto grid gap-8 lg:gap-0 grid-cols-1 lg:grid-cols-12 place-items-center mt-16">
         <div className="col-span-2 text-center flex flex-col items-center">
           <Image
@@ -81,6 +73,69 @@ const TemplateCreator = () => {
           </p>
         </div>
       </div>
+    );
+  }
+
+  if (currentSlide === 1) {
+    currentContent = (
+      <div className="flex items-center justify-center p-20 bg-gray-100 rounded-lg mt-20">
+        <p>Submit Template - Upcomming...</p>
+      </div>
+    );
+  }
+
+  if (currentSlide === 2) {
+    currentContent = (
+      <div className="flex items-center justify-center p-20 bg-gray-100 rounded-lg mt-20">
+        <p>Wait for Approved - Upcomming...</p>
+      </div>
+    );
+  }
+
+  if (currentSlide === 3) {
+    currentContent = (
+      <div className="flex items-center justify-center p-20 bg-gray-100 rounded-lg mt-20">
+        <p>Approved - Upcomming...</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="layout mt-14 lg:mt-52">
+      <h2 className="text-3xl text-accent text-center">
+        Become a <strong>template creator</strong>
+      </h2>
+      <div className="mt-20">
+        <div className="max-w-[740px] mx-auto text-accent grid md:grid-cols-2 lg:grid-cols-4 gap-1 bg-neutral rounded-[25px] lg:rounded-full">
+          <button
+            onClick={() => setCurrentSlide(0)}
+            className={buttonStyle(currentSlide, 0)}
+          >
+            Check Guidelines
+          </button>
+          <button
+            onClick={() => setCurrentSlide(1)}
+            className={buttonStyle(currentSlide, 1)}
+          >
+            Submit template
+          </button>
+          <button
+            onClick={() => setCurrentSlide(2)}
+            className={buttonStyle(currentSlide, 2)}
+          >
+            Wait for Approved
+          </button>
+          <button
+            onClick={() => setCurrentSlide(3)}
+            className={buttonStyle(currentSlide, 3)}
+          >
+            Approved
+          </button>
+        </div>
+      </div>
+
+      {/* Slider content */}
+      {currentContent}
       <div className="w-fit mt-20 mx-auto">
         <Button
           text="Submit a Template"

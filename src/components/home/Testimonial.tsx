@@ -36,7 +36,7 @@ const TestimonialData = [
 
 const Testimonial = () => {
   return (
-    <div className="layout mt-14 lg:mt-44 mb-44">
+    <div className="layout mt-14 lg:my-52">
       <h2 className="text-3xl text-accent text-center">
         Clients <strong>testimonial</strong>
       </h2>
