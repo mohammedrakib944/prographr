@@ -12,29 +12,20 @@ const TemplateCreator = () => {
       <h2 className="text-3xl text-accent text-center">
         Become a <strong>template creator</strong>
       </h2>
-      <div className="mt-8">
+      <div className="mt-20">
         <div className="max-w-[740px] mx-auto text-accent grid md:grid-cols-2 lg:grid-cols-4 gap-1 bg-neutral rounded-[25px] lg:rounded-full">
           <button className="min-w-[193px] rounded-full py-4 px-8 bg-primary text-white ">
             Check Guidelines
           </button>
-          <button className="rounded-full py-4 px-4 hover:bg-accent/50 hover:text-white">
+          <button className="rounded-full py-4 px-4 hover:text-primary hover:font-bold">
             Submit template
           </button>
-          <button className="rounded-full py-4 px-4 hover:bg-accent/50 hover:text-white">
+          <button className="rounded-full py-4 px-4 hover:text-primary hover:font-bold">
             Wait for Approved
           </button>
-          <button className="rounded-full py-4 px-8 hover:bg-accent/50 hover:text-white">
+          <button className="rounded-full py-4 px-8 hover:text-primary hover:font-bold">
             Approved
           </button>
-        </div>
-
-        <div className="w-fit mt-8 mx-auto">
-          <Button
-            text="Submit a Template"
-            className="shadow-none"
-            icon={<FiArrowUpRight />}
-            outline
-          />
         </div>
       </div>
       <div className="max-w-[940px] mx-auto grid gap-8 lg:gap-0 grid-cols-1 lg:grid-cols-12 place-items-center mt-16">
@@ -89,6 +80,14 @@ const TemplateCreator = () => {
             Template Sold & you got Paid
           </p>
         </div>
+      </div>
+      <div className="w-fit mt-20 mx-auto">
+        <Button
+          text="Submit a Template"
+          className="shadow-none"
+          icon={<FiArrowUpRight />}
+          outline
+        />
       </div>
     </div>
   );

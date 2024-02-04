@@ -3,13 +3,13 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/home/Footer";
-import { Roboto } from "next/font/google";
+// import { Roboto } from "next/font/google";
 
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--roboto-button",
-});
+// const roboto = Roboto({
+//   weight: "400",
+//   subsets: ["latin"],
+//   variable: "--roboto-button",
+// });
 
 const gellix = localFont({
   src: "../../public/fonts/Gellix/Gellix-Medium.ttf",
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} ${gellix.className}`}>
+      <body className={gellix.className}>
         <main className="">
           <Navbar />
           {children}

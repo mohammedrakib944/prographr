@@ -54,7 +54,7 @@ export default Testimonial;
 
 const Card = ({ data }: any) => {
   return (
-    <div className="max-w-[450px] bg-white text-accent border border-neutral shadow-xl rounded-[30px] p-7 relative">
+    <div className="max-w-[450px] bg-white text-accent border border-neutral hover:shadow-xl duration-150 rounded-[30px] p-7 relative">
       <div className="p-5 -mt-14 w-fit mx-auto bg-primary text-2xl text-white rounded-full">
         <BiSolidQuoteAltRight />
       </div>

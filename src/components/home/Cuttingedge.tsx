@@ -19,15 +19,15 @@ const Cuttingedge = () => {
       <h2 className="text-3xl text-accent text-center">
         Get <strong>cutting-edge design</strong>
       </h2>
-      <div className="mt-8">
+      <div className="mt-20">
         <div className="max-w-[540px] mx-auto text-accent grid md:grid-cols-2 lg:grid-cols-3 gap-4 bg-neutral rounded-[25px] lg:rounded-full">
           <button className="min-w-[187px] rounded-full py-3 px-7 bg-primary text-white ">
             Collect Ideas
           </button>
-          <button className="rounded-full py-3 px-4 hover:bg-accent/50 hover:text-white">
+          <button className="rounded-full py-3 px-4 hover:text-primary hover:font-bold">
             Design Analysis
           </button>
-          <button className="rounded-full py-3 px-4 hover:bg-accent/50 hover:text-white">
+          <button className="rounded-full py-3 px-4 hover:text-primary hover:font-bold">
             Finalize Design
           </button>
         </div>

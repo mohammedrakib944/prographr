@@ -8,8 +8,7 @@ const InfiniteScroll = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.topWhiteShadow}></div>
-      <section className="">
-        <Image className={style.scrolling} src={Banner} alt="Banner" />
+      <section className="-mt-12">
         <Image className={style.scrolling} src={Banner} alt="Banner" />
         <Image className={style.scrolling} src={Banner} alt="Banner" />
       </section>
