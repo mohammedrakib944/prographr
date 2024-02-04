@@ -6,11 +6,11 @@ import InfiniteScroll from "./scroll/InfiniteScroll";
 const Hero = () => {
   return (
     <header className="w-full bg-white">
-      <div className="layout pb-10 lg:pb-0 lg:h-[calc(100vh-70px)] xl:max-h-[1080px] lg:grid lg:gap-10 lg:grid-cols-2">
+      <div className="layout pb-10 lg:pb-0 lg:h-[calc(100vh-70px)] xl:max-h-[1080px] lg:grid lg:gap-12 lg:grid-cols-5">
         {/* text section */}
-        <div className="pt-12 lg:pt-0 flex flex-col gap-2 items-center lg:items-start justify-center">
+        <div className="lg:col-span-2 pt-12 lg:pt-0 flex flex-col gap-2 items-center lg:items-start justify-center">
           <p className="tracking-[0.5rem] text-sm text-primary">PRO PREMIUM</p>
-          <h1 className="text-5xl text-accent leading-[50px] text-center lg:text-start">
+          <h1 className="text-4xl lg:text-5xl text-accent font-extrabold leading-[50px] text-center lg:text-start">
             Fully Editable <br /> Template Starting <br />
             From Only $2
           </h1>
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
         </div>
         {/* slider section */}
-        <div className="hidden lg:flex items-center mx-4 my-12 lg:m-0">
+        <div className="hidden lg:col-span-3 lg:flex items-center mx-4 my-12 lg:m-0">
           <InfiniteScroll />
         </div>
       </div>

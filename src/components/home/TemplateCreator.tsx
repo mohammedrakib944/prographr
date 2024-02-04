@@ -8,7 +8,7 @@ import { FaCheck } from "react-icons/fa6";
 import Image from "next/image";
 
 function buttonStyle(current: number, slideNo: number) {
-  return `rounded-full py-4 px-4 hover:text-primary hover:scale-105 duration-100 ${
+  return `rounded-full p-3 text-sm hover:text-primary hover:scale-105 duration-100 ${
     current === slideNo && "bg-primary text-white hover:text-white"
   }`;
 }
