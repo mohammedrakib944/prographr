@@ -37,7 +37,8 @@ const Button = ({
     <button
       className={`btn btn-primary font-light capitalize text-white rounded-full gap-4 ${className}`}
     >
-      {text} {icon && <span className="">{icon}</span>}
+      <span className="font-roboto">{text}</span>{" "}
+      {icon && <span className="">{icon}</span>}
     </button>
   );
 };

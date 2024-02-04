@@ -1,15 +1,14 @@
 import React from "react";
 import Button from "../common/Button";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import Image from "next/image";
-import Slider from "@/assets/slider/slider.png";
+import InfiniteScroll from "./scroll/InfiniteScroll";
 
 const Hero = () => {
   return (
-    <header className="w-full bg-gray-50">
-      <div className="layout pb-10 lg:pb-0 lg:h-[calc(100vh-70px)] xl:max-h-[1080px] lg:grid lg:grid-cols-2">
+    <header className="w-full bg-white">
+      <div className="layout pb-10 lg:pb-0 lg:h-[calc(100vh-70px)] xl:max-h-[1080px] lg:grid lg:gap-10 lg:grid-cols-7">
         {/* text section */}
-        <div className="pt-12 lg:pt-0 flex flex-col gap-2 items-center lg:items-start justify-center">
+        <div className="lg:col-span-3 pt-12 lg:pt-0 flex flex-col gap-2 items-center lg:items-start justify-center">
           <p className="tracking-[0.5rem] text-sm text-primary">PRO PREMIUM</p>
           <h1 className="text-5xl text-accent leading-[50px] text-center lg:text-start">
             Fully Editable <br /> Template Starting <br />
@@ -47,12 +46,8 @@ const Hero = () => {
           </div>
         </div>
         {/* slider section */}
-        <div className="flex items-center mx-4 my-12 lg:m-0">
-          <Image
-            src={Slider}
-            className="bg-white shadow-md rounded-box p-4"
-            alt="Slider Image"
-          />
+        <div className="hidden lg:col-span-4 lg:flex items-center mx-4 my-12 lg:m-0">
+          <InfiniteScroll />
         </div>
       </div>
     </header>
