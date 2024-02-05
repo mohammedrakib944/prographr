@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { BiSolidQuoteAltRight } from "react-icons/bi";
 import { LuArrowUpRight } from "react-icons/lu";
 import DelowerHossain from "@/assets/stuff/1.png";
@@ -17,6 +17,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
+import useScrollTrigger from "@/hooks/useScrollTrigger";
 
 const TestimonialData = [
   {
@@ -62,13 +63,16 @@ const TestimonialData = [
 ];
 
 const Testimonial = () => {
+  const container = useRef<any>();
+  useScrollTrigger({ identifier: ".gsapTrigger4", top: 100 }, container);
+
   return (
     <div className="layout mt-14 mb-14 lg:mb-44 lg:mt-36">
       <h2 className="text-3xl text-accent text-center">
         Clients <strong>testimonial</strong>
       </h2>
 
-      <div>
+      <div ref={container}>
         <Swiper
           spaceBetween={20}
           breakpoints={{
@@ -85,7 +89,7 @@ const Testimonial = () => {
           }}
           pagination={true}
           modules={[Autoplay, Pagination]}
-          className="mt-20 grid gap-10 lg:gap-4 gird-cols-1 lg:grid-cols-3"
+          className="mt-20 grid gap-10 lg:gap-4 gird-cols-1 lg:grid-cols-3 translate-y-36 opacity-0 gsapTrigger4"
         >
           {TestimonialData.map((item, index: number) => (
             <SwiperSlide key={index}>

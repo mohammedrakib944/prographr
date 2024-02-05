@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Button from "../common/Button";
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
 import Tools from "@/assets/tools.jpg";
+import useScrollTrigger from "@/hooks/useScrollTrigger";
 
 function buttonStyle(current: number, slideNo: number) {
   return `rounded-full p-3 text-sm hover:text-primary hover:scale-105 duration-100 ${
@@ -13,6 +14,9 @@ function buttonStyle(current: number, slideNo: number) {
 
 const Cuttingedge = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const container = useRef<any>();
+  useScrollTrigger({ identifier: ".gsapTrigger3", top: 100 }, container);
 
   let currentContent = null;
 
@@ -74,12 +78,12 @@ const Cuttingedge = () => {
   }
 
   return (
-    <div className="layout mt-14 lg:mt-60">
+    <div ref={container} className="layout mt-14 lg:mt-60">
       <h2 className="text-3xl text-accent text-center">
         Get <strong>cutting-edge design</strong>
       </h2>
       <div className="mt-20">
-        <div className="max-w-[540px] mx-auto text-accent grid md:grid-cols-2 lg:grid-cols-3 gap-4 bg-neutral rounded-[25px] lg:rounded-full">
+        <div className="max-w-[540px] mx-auto text-accent grid md:grid-cols-2 lg:grid-cols-3 gap-4 bg-neutral rounded-[25px] lg:rounded-full translate-y-24 opacity-0 gsapTrigger2">
           <button
             onClick={() => setCurrentSlide(0)}
             className={buttonStyle(currentSlide, 0)}
@@ -101,7 +105,9 @@ const Cuttingedge = () => {
         </div>
       </div>
       {/* Slides */}
-      {currentContent}
+      <div className="translate-y-24 opacity-0 gsapTrigger2">
+        {currentContent}
+      </div>
     </div>
   );
 };

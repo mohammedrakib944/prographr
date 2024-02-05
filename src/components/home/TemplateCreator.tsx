@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Button from "../common/Button";
 import { FiArrowUpRight } from "react-icons/fi";
 import Road from "@/assets/road.svg";
 import TemplateImage from "@/assets/slider/slider.png";
 import { FaCheck } from "react-icons/fa6";
 import Image from "next/image";
+import useScrollTrigger from "@/hooks/useScrollTrigger";
 
 function buttonStyle(current: number, slideNo: number) {
   return `rounded-full p-3 text-sm hover:text-primary hover:scale-105 duration-100 ${
@@ -15,6 +16,8 @@ function buttonStyle(current: number, slideNo: number) {
 
 const TemplateCreator = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const container = useRef<any>();
+  useScrollTrigger({ identifier: ".gsapTrigger2", top: 90 }, container);
 
   let currentContent = null;
 
@@ -101,12 +104,12 @@ const TemplateCreator = () => {
   }
 
   return (
-    <div className="layout mt-14 lg:mt-52">
+    <div ref={container} className="layout mt-14 lg:mt-52">
       <h2 className="text-3xl text-accent text-center">
         Become a <strong>template creator</strong>
       </h2>
       <div className="mt-20">
-        <div className="max-w-[740px] mx-auto text-accent grid md:grid-cols-2 lg:grid-cols-4 gap-1 bg-neutral rounded-[25px] lg:rounded-full">
+        <div className="max-w-[740px] mx-auto text-accent grid md:grid-cols-2 lg:grid-cols-4 gap-1 bg-neutral rounded-[25px] lg:rounded-full translate-y-24 opacity-0 gsapTrigger2">
           <button
             onClick={() => setCurrentSlide(0)}
             className={buttonStyle(currentSlide, 0)}
@@ -135,7 +138,9 @@ const TemplateCreator = () => {
       </div>
 
       {/* Slider content */}
-      {currentContent}
+      <div className="translate-y-24 opacity-0 gsapTrigger2">
+        {currentContent}
+      </div>
       <div className="w-fit mt-20 mx-auto">
         <Button
           text="Submit a Template"

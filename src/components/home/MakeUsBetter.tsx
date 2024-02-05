@@ -10,7 +10,7 @@ import useScrollTrigger from "@/hooks/useScrollTrigger";
 
 const MakeUsBetter = () => {
   const container = useRef<any>();
-  useScrollTrigger(".gsapTrigger", container);
+  useScrollTrigger({ identifier: ".gsapTrigger", top: 90 }, container);
 
   return (
     <div className="layout mt-20 pt-14 lg:pt-36">
