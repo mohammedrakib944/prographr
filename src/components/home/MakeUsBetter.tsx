@@ -4,27 +4,13 @@ import HomeCard from "@/components/home/HomeCard";
 import Creativity from "@/assets/icons/Creativity.svg";
 import TeamCollaboration from "@/assets/icons/TeamCollaboration.svg";
 import Professionalism from "@/assets/icons/Professionalism.svg";
-import { scrollTriggerObject } from "@/utils/scrollTrigger";
 
 import { useRef } from "react";
-
-import gsap from "gsap"; // <-- import GSAP
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import useScrollTrigger from "@/hooks/useScrollTrigger";
 
 const MakeUsBetter = () => {
   const container = useRef<any>();
-  useGSAP(
-    () => {
-      const elements = document.querySelectorAll(".gsapTrigger");
-      elements.forEach((element, index) => {
-        gsap.to(element, scrollTriggerObject(element, index));
-      });
-    },
-    { scope: container }
-  );
+  useScrollTrigger(".gsapTrigger", container);
 
   return (
     <div className="layout mt-20 pt-14 lg:pt-36">
