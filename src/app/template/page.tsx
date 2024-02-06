@@ -17,7 +17,7 @@ const page = () => {
       <FreeTemp />
       <div className="mx-4 pt-20">
         <div className="layout rounded-[30px] bg-primary flex justify-between">
-          <div className="p-10">
+          <div className="p-10 lg:pl-14">
             <h2 className="text-xl mt-4 md:text-2xl lg:text-3xl text-white">
               First Marketplace, <br /> where client choose best design
             </h2>
