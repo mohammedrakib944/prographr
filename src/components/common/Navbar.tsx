@@ -4,14 +4,14 @@ import Icon from "@/assets/icon.svg";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
-import { FaArrowRight } from "react-icons/fa";
+import { FiArrowRight } from "react-icons/fi";
 import { RiMenu2Fill } from "react-icons/ri";
 
 const Navbar = () => {
   const NavLinks = [
     {
       text: "Template",
-      link: "#",
+      link: "/template",
     },
     {
       text: "Company",
@@ -79,11 +79,11 @@ const Navbar = () => {
         <div className="col-span-6 lg:col-span-3 flex items-center gap-3 justify-end">
           <Button
             text="Sign in"
-            className="shadow-none bg-primary/10 hover:bg-primary/20"
-            icon={<FaArrowRight />}
+            className="shadow-none bg-primary/20 hover:bg-primary/30"
+            icon={<FiArrowRight />}
             outline
           />
-          <Button text="Sign up" icon={<FaArrowRight />} />
+          <Button text="Sign up" icon={<FiArrowRight />} />
         </div>
       </nav>
     </div>

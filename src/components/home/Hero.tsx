@@ -6,10 +6,15 @@ import InfiniteScroll from "./scroll/InfiniteScroll";
 const Hero = () => {
   return (
     <header className="w-full bg-neutral">
-      <div className="layout pb-10 lg:pb-0 lg:h-[calc(100vh-100px)] xl:max-h-[1080px] lg:grid lg:gap-12 lg:grid-cols-12">
+      <div className="layout pb-10 lg:pb-0 lg:h-[calc(100vh-100px)] xl:max-h-[960px] lg:grid lg:gap-12 lg:grid-cols-12">
         {/* text section */}
         <div className="lg:col-span-5 pt-12 lg:pt-0 flex flex-col gap-2 items-center lg:items-start justify-center">
-          <p className="tracking-[0.5rem] text-sm text-primary">PRO PREMIUM</p>
+          <p className="tracking-[0.5rem] text-sm text-primary">
+            <span className="bg-primary px-2 py-1 rounded-[4px] tracking-widest text-white text-center">
+              PRO
+            </span>{" "}
+            PREMIUM
+          </p>
           <h1 className="text-4xl lg:text-5xl text-accent font-extrabold leading-[50px] text-center lg:text-start">
             Fully Editable <br /> Template Starting <br />
             From Only $2

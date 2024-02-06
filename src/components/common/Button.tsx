@@ -19,7 +19,9 @@ const Button = ({
         className={`btn bg-neutral capitalize rounded-full font-light text-accent gap-4 ${className}`}
       >
         <span className="-mt-1">{text}</span>{" "}
-        {icon && <span className="">{icon}</span>}
+        {icon && (
+          <span className="bg-primary text-white rounded-full p-1">{icon}</span>
+        )}
       </button>
     );
   }
@@ -30,7 +32,9 @@ const Button = ({
         className={`btn bg-white hover:bg-gray-100 font-light capitalize text-accent rounded-full gap-4 ${className}`}
       >
         <span className="-mt-1">{text}</span>{" "}
-        {icon && <span className="text-primary">{icon}</span>}
+        {icon && (
+          <span className="bg-primary text-white rounded-full p-1">{icon}</span>
+        )}
       </button>
     );
   }
@@ -40,7 +44,9 @@ const Button = ({
       className={`btn btn-primary font-light capitalize text-white rounded-full gap-4 ${className}`}
     >
       <span className="-mt-1">{text}</span>
-      {icon && <span className="">{icon}</span>}
+      {icon && (
+        <span className="bg-white text-primary rounded-full p-1">{icon}</span>
+      )}
     </button>
   );
 };
