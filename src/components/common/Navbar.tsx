@@ -59,10 +59,20 @@ const Navbar = () => {
 
         {/* Desktop View */}
         {/* Logo */}
-        <div className="col-span-3 text-2xl font-extrabold flex items-center">
-          <Image src={Icon} className="block md:hidden" alt="Prographer Logo" />
-          <Image src={Logo} className="hidden md:block" alt="Prographer Logo" />
-        </div>
+        <Link href="/" className="col-span-3 mt-1">
+          <div className="text-2xl font-extrabold flex items-center">
+            <Image
+              src={Icon}
+              className="block md:hidden"
+              alt="Prographer Logo"
+            />
+            <Image
+              src={Logo}
+              className="hidden md:block"
+              alt="Prographer Logo"
+            />
+          </div>
+        </Link>
 
         {/* Links */}
         <ul className="col-span-4 hidden lg:flex items-center gap-7">

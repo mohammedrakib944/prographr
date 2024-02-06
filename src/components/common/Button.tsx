@@ -16,7 +16,7 @@ const Button = ({
   if (outline) {
     return (
       <button
-        className={`btn bg-neutral capitalize rounded-full font-light text-accent gap-4 ${className}`}
+        className={`btn bg-neutral capitalize hover:bg-primary/50 rounded-full font-light text-accent gap-4 shadow-none ${className}`}
       >
         <span className="-mt-1">{text}</span>{" "}
         {icon && (
