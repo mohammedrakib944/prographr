@@ -1,40 +1,79 @@
 .wrapper {
-  width: 100%;
-  height: 80%;
-  max-height: 800px;
-  background-color: white;
   margin-top: -50px;
-  position: relative;
+  display: flex;
+  height: 750px;
   overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
 }
-.topWhiteShadow,
-.bottomWhiteShadow {
+.topShadow,
+.bottomShadow {
   z-index: 10;
   position: absolute;
   width: 100%;
   height: 80px;
 }
-.topWhiteShadow {
+.topShadow {
   left: 0px;
   top: -5px;
-  background: linear-gradient(0, transparent, white);
+  background: linear-gradient(0, transparent, #edeef7);
 }
-.bottomWhiteShadow {
+.bottomShadow {
   bottom: -5px;
   left: 0;
-  background: linear-gradient(0, white, transparent);
+  background: linear-gradient(0, #edeef7, transparent);
+}
+.section {
+  flex: 1 0 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 750px;
+  position: relative;
+  width: 1px;
+  z-index: 1;
+}
+.section img {
+  width: 100%;
 }
 
 .scrolling {
-  animation: varticleScroll 20s linear infinite backwards;
+  animation: infScroll 25s linear infinite backwards;
 }
 
-@keyframes varticleScroll {
+@keyframes infScroll {
   0% {
-    transform: translateY(0) scale(1.01);
+    transform: translateY(0%);
   }
-
   100% {
-    transform: translateY(-100%) scale(1.01);
+    transform: translateY(-100%);
+  }
+}
+.scrolling2 {
+  margin-left: 20px;
+  animation: infScroll 20s linear infinite backwards;
+}
+
+@keyframes infScroll {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.scrolling3 {
+  margin-left: 20px;
+  animation: infScroll 25s linear infinite backwards;
+}
+
+@keyframes infScroll {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }
