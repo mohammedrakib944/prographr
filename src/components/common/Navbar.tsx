@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Logo from "@/assets/logo.svg";
 import Icon from "@/assets/icon.svg";
@@ -6,22 +7,26 @@ import Link from "next/link";
 import Button from "./Button";
 import { FiArrowRight } from "react-icons/fi";
 import { RiMenu2Fill } from "react-icons/ri";
+import { usePathname } from "next/navigation";
+
+const NavLinks = [
+  {
+    text: "Template",
+    link: "/template",
+  },
+  {
+    text: "Company",
+    link: "#",
+  },
+  {
+    text: "Contact Us",
+    link: "#",
+  },
+];
 
 const Navbar = () => {
-  const NavLinks = [
-    {
-      text: "Template",
-      link: "/template",
-    },
-    {
-      text: "Company",
-      link: "#",
-    },
-    {
-      text: "Contact Us",
-      link: "#",
-    },
-  ];
+  const pathname = usePathname();
+
   return (
     <div className="w-full bg-neutral">
       <nav className="layout grid grid-cols-10 py-[32px]">
@@ -78,7 +83,12 @@ const Navbar = () => {
         <ul className="col-span-4 hidden lg:flex items-center gap-7">
           {NavLinks?.map((item, index: number) => (
             <li key={index}>
-              <Link href={item.link} className="hover:text-primary">
+              <Link
+                href={item.link}
+                className={`hover:text-primary ${
+                  pathname === item.link && "text-primary"
+                }`}
+              >
                 {item.text}
               </Link>
             </li>

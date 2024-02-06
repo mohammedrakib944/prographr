@@ -144,9 +144,8 @@ const TemplateCreator = () => {
       <div className="w-fit mt-20 mx-auto">
         <Button
           text="Submit a Template"
-          className="shadow-none"
+          className="px-6 py-3 text-base mt-5"
           icon={<FiArrowUpRight />}
-          outline
         />
       </div>
     </div>

@@ -58,7 +58,7 @@ const FreeTemp = () => {
       </div>
       <div className="flex justify-center">
         <Button
-          className="px-6 py-4 text-base mt-20"
+          className="px-6 py-3 text-base mt-20"
           text="View more free items"
           icon={<IoMdArrowDown />}
           outline

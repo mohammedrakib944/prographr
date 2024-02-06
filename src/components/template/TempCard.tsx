@@ -6,7 +6,7 @@ const TempCard = ({ data }: any) => {
     <div className="max-w-[500px] rounded-[30px] hover:shadow-lg duration-200 overflow-hidden border">
       <img
         src={data.img}
-        className="h-[220px] w-full object-contain"
+        className="h-[220px] w-full object-cover"
         alt="Card Image"
       />
       <div className="flex items-center justify-between px-5 py-4 border-t">
