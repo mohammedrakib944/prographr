@@ -49,7 +49,9 @@ const Navbar = () => {
               className="drawer-overlay"
             ></label>
             <ul className="menu p-4 w-80 min-h-full bg-white text-base-content flex items-center">
-              <Image src={Logo} className="my-10" alt="Logo" />
+              <Link href="/">
+                <Image src={Logo} className="my-10" alt="Logo" />
+              </Link>
               {/* Sidebar content here */}
               {NavLinks?.map((item, index: number) => (
                 <li key={index}>
@@ -97,13 +99,17 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="col-span-6 lg:col-span-3 flex items-center gap-3 justify-end">
-          <Button
-            text="Sign in"
-            className="shadow-none bg-primary/20 hover:bg-primary/30"
-            icon={<FiArrowRight />}
-            outline
-          />
-          <Button text="Sign up" icon={<FiArrowRight />} />
+          <Link href="/sign-in" className="min-w-fit">
+            <Button
+              text="Sign in"
+              className="shadow-none bg-primary/20 hover:bg-primary/30"
+              icon={<FiArrowRight />}
+              outline
+            />
+          </Link>
+          <Link href="/sign-up-as" className="min-w-fit">
+            <Button text="Sign up" icon={<FiArrowRight />} />
+          </Link>
         </div>
       </nav>
     </div>

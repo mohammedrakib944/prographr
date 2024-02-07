@@ -1,22 +1,26 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 
-const Button = ({
-  text,
-  icon,
-  outline,
-  white,
-  className,
-}: {
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   text?: string;
   icon?: React.ReactNode;
   outline?: boolean;
   white?: boolean;
   className?: string;
+};
+
+const Button: React.FC<ButtonProps> = ({
+  text,
+  icon,
+  outline,
+  white,
+  className,
+  ...props
 }) => {
   if (outline) {
     return (
       <button
         className={`btn bg-neutral capitalize hover:bg-primary/50 rounded-full font-light text-accent gap-4 shadow-none ${className}`}
+        {...props}
       >
         <span className="-mt-1">{text}</span>{" "}
         {icon && (
@@ -30,6 +34,7 @@ const Button = ({
     return (
       <button
         className={`btn bg-white hover:bg-gray-100 font-light capitalize text-accent rounded-full gap-4 ${className}`}
+        {...props}
       >
         <span className="-mt-1">{text}</span>{" "}
         {icon && (
@@ -42,6 +47,7 @@ const Button = ({
   return (
     <button
       className={`btn btn-primary font-light capitalize text-white rounded-full gap-4 ${className}`}
+      {...props}
     >
       <span className="-mt-1">{text}</span>
       {icon && (

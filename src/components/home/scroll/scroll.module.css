@@ -4,25 +4,16 @@
   height: 750px;
   overflow: hidden;
   padding: 0;
+  -webkit-mask: linear-gradient(
+    0deg,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+  mask: linear-gradient(0deg, transparent, white 10%, white 90%, transparent);
   position: relative;
   width: 100%;
-}
-.topShadow,
-.bottomShadow {
-  z-index: 10;
-  position: absolute;
-  width: 100%;
-  height: 80px;
-}
-.topShadow {
-  left: 0px;
-  top: -5px;
-  background: linear-gradient(0, transparent, #edeef7);
-}
-.bottomShadow {
-  bottom: -5px;
-  left: 0;
-  background: linear-gradient(0, #edeef7, transparent);
 }
 .section {
   flex: 1 0 0px;
@@ -43,11 +34,8 @@
 }
 
 @keyframes infScroll {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-100%);
+  to {
+    transform: translateY(calc(-100% - 20px));
   }
 }
 .scrolling2 {
@@ -56,11 +44,8 @@
 }
 
 @keyframes infScroll {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-100%);
+  to {
+    transform: translateY(calc(-100% - 20px));
   }
 }
 
@@ -70,10 +55,7 @@
 }
 
 @keyframes infScroll {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-100%);
+  to {
+    transform: translateY(calc(-100% - 20px));
   }
 }
