@@ -10,7 +10,7 @@
     @apply text-[11px] font-semibold py-2;
   }
   .inputfield {
-    @apply w-[280px] lg:w-[350px] px-3 py-[10px] rounded-lg outline-primary/50;
+    @apply w-[280px] lg:w-[350px] px-3 py-[10px] rounded-lg outline-primary;
   }
   .btn {
     @apply border-none h-fit min-h-[0px]  pr-2 pl-4 py-[7px];

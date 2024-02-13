@@ -7,11 +7,12 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import React from "react";
 import Image from "next/image";
 import ClientImage from "@/assets/client.png";
+import SearchBar from "@/components/template/SearchBar";
 
 const page = () => {
   return (
     <div>
-      <Hero />
+      <SearchBar />
       <TopSelling />
       <Newest />
       <FreeTemp />
