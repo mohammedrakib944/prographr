@@ -4,7 +4,7 @@ import { IoSearchOutline } from "react-icons/io5";
 const SearchBar = () => {
   return (
     <div className="bg-neutral">
-      <div className="max-w-[700px] mx-auto px-4 flex flex-col items-center gap-4 pt-20">
+      <div className="max-w-[700px] mx-auto px-4 flex flex-col items-center gap-4 pt-12 lg:pt-20">
         <p className="w-fit text-sm font-semibold border border-black rounded-full px-4 py-1">
           Shop Templates
         </p>
@@ -22,7 +22,7 @@ const SearchBar = () => {
           <input
             type="text"
             placeholder="Search resourcces..."
-            className="w-[400px] p-3 bg-transparent outline-none"
+            className="w-[300px] lg:w-[400px] p-3 bg-transparent outline-none"
           />
           <button>
             <IoSearchOutline />
