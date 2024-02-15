@@ -19,12 +19,13 @@ const Button: React.FC<ButtonProps> = ({
   if (outline) {
     return (
       <button
-        className={`btn bg-neutral capitalize hover:bg-primary/50 rounded-full font-light text-accent gap-4 shadow-none ${className}`}
+        className={`btn bg-transparent capitalize hover:bg-primary/10 rounded-full font-light text-accent gap-4 shadow-none ${className} !border-accent`}
         {...props}
       >
         <span className="-mt-1">{text}</span>{" "}
         {icon && (
-          <span className="bg-primary text-white rounded-full p-1">{icon}</span>
+          // <span className="bg-primary text-white rounded-full p-1">{icon}</span>
+          <>{icon}</>
         )}
       </button>
     );
@@ -38,7 +39,8 @@ const Button: React.FC<ButtonProps> = ({
       >
         <span className="-mt-1">{text}</span>{" "}
         {icon && (
-          <span className="bg-primary text-white rounded-full p-1">{icon}</span>
+          // <span className="bg-primary text-white rounded-full p-1">{icon}</span>
+          <>{icon}</>
         )}
       </button>
     );
@@ -51,7 +53,8 @@ const Button: React.FC<ButtonProps> = ({
     >
       <span className="-mt-1">{text}</span>
       {icon && (
-        <span className="bg-white text-primary rounded-full p-1">{icon}</span>
+        // <span className="bg-white text-primary rounded-full p-1">{icon}</span>
+        <>{icon}</>
       )}
     </button>
   );
