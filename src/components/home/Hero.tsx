@@ -6,7 +6,7 @@ import InfiniteScroll from "./scroll/InfiniteScroll";
 const Hero = () => {
   return (
     <header className="w-full bg-neutral">
-      <div className="layout pb-10 lg:pb-0 lg:h-[calc(100vh-100px)] xl:max-h-[960px] lg:grid lg:gap-12 lg:grid-cols-12">
+      <div className="layout pb-10 lg:pb-0 lg:h-[calc(100vh-120px)] xl:max-h-[900px] lg:grid lg:gap-12 lg:grid-cols-12">
         {/* text section */}
         <div className="lg:col-span-5 pt-12 lg:pt-0 flex flex-col gap-2 items-center lg:items-start justify-center">
           <p className="tracking-[0.5rem] text-sm text-primary">
