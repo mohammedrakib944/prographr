@@ -62,16 +62,85 @@ const Cuttingedge = () => {
 
   if (currentSlide === 1) {
     currentContent = (
-      <div className="flex items-center justify-center p-20 bg-gray-100 rounded-lg mt-20">
-        <p>Design Analysis - Upcomming...</p>
+      <div className="w-full grid lg:grid-cols-2 px-10 gap-8 lg:gap-0 my-20">
+        <div className="text-accent max-w-[500px]">
+          <h2 className="text-2xl">
+            Design <strong> Analysis</strong>
+          </h2>
+          <p className="py-5">
+            Analyzing the visual appeal and aesthetic qualities of the design,
+            including factors such as color, typography, layout, and overall
+            design coherence
+          </p>
+
+          <ul className="list-disc ml-4">
+            <li>
+              Assessing the design's potential for adaptation, scalability, and
+              innovation to meet evolving user needs, technological
+              advancements, and market trends over time.
+            </li>
+            <li className="mt-3">
+              Evaluating how users interact with the design and identifying
+              areas for improvement to enhance usability, accessibility, and
+              overall satisfaction of clients.
+            </li>
+          </ul>
+          <br />
+          <Button
+            className="mt-4"
+            text="Learn More"
+            icon={<FiArrowUpRight />}
+          />
+        </div>
+        <div className="flex lg:justify-end">
+          <div className="w-[300px] h-[150px] lg:w-[500px] lg:h-[300px] bg-neutral rounded-[25px] flex items-center justify-center">
+            <button className="text-4xl text-primary hover:scale-110 duration-200">
+              <FaPlay />
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
 
   if (currentSlide === 2) {
     currentContent = (
-      <div className="flex items-center justify-center p-20 bg-gray-100 rounded-lg mt-20">
-        <p>Finalize Design - Upcomming...</p>
+      <div className="w-full grid lg:grid-cols-2 px-10 gap-8 lg:gap-0 my-20">
+        <div className="text-accent max-w-[500px]">
+          <h2 className="text-2xl">
+            Finalize <strong> Analysis</strong>
+          </h2>
+          <p className="py-5">
+            Conduct a thorough review of the design to ensure it meets the
+            project requirements and objectives. Make any necessary revisions
+            based on feedback from stakeholders, clients, or team members.
+          </p>
+
+          <ul className="list-disc ml-4">
+            <li>
+              Perform quality assurance checks to identify and fix any errors,
+              inconsistencies, or technical issues in the design.
+            </li>
+            <li className="mt-3">
+              Once all revisions, quality checks, and approvals are complete,
+              finalize the design and request stakeholders or clients to confirm
+              that the design is ready for handove.
+            </li>
+          </ul>
+          <br />
+          <Button
+            className="mt-4"
+            text="Learn More"
+            icon={<FiArrowUpRight />}
+          />
+        </div>
+        <div className="flex lg:justify-end">
+          <div className="w-[300px] h-[150px] lg:w-[500px] lg:h-[300px] bg-neutral rounded-[25px] flex items-center justify-center">
+            <button className="text-4xl text-primary hover:scale-110 duration-200">
+              <FaPlay />
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
