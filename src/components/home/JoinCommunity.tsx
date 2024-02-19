@@ -8,10 +8,9 @@ const JoinCommunity = () => {
         <div>
           <h3 className="text-3xl mb-10">Join Our Community</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-            praesentium est ea? Ducimus accusantium, sed quisquam repudiandae
-            corrupti sint nisi asperiores fugiat dolorum numquam mollitia
-            voluptates temporibus tempora neque nobis.
+            Join our online community to explore our imagination. Learn more
+            about our focus, interests, and how other members engage with one
+            another to explore their ideas.
           </p>
         </div>
         <div className="w-fit grid grid-cols-2 gap-3 lg:block lg:w-[400px] float-right relative">

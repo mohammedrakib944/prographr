@@ -16,49 +16,36 @@ import "swiper/css/pagination";
 // import "./styles.css";
 
 // import required modules
-import { Autoplay, Pagination } from "swiper/modules";
+import {
+  //  Autoplay,
+  Pagination,
+} from "swiper/modules";
 import useScrollTrigger from "@/hooks/useScrollTrigger";
 
 const TestimonialData = [
   {
     id: 1,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium commodi amet ipsum omnis dignissimos.",
-    name: "Delower Hossain",
-    title: "Junior Graphic Designer",
+      "We have been using Prographr marketplace for over 5 years now and has been instrumental in our branding, packaging and all creative design projects. They are always available, has very strong work ethic and integrity. Great quality and exceeds our expectations",
+    name: "Suresh Kanthaswamy",
+    title: "Envelor Inc.",
     photo: DelowerHossain,
   },
   {
     id: 2,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium commodi amet ipsum omnis dignissimos.",
-    name: "Raihan Uddin",
-    title: "Junior Graphic Designer",
+      "I have worked now with Prographr now for nearly a year, with a total of over 50 projects. I can say that with every project, we gets better and better. Reliable and ALWAYS on time!",
+    name: "Kaleb Held",
+    title: "Industrolux",
     photo: RaihanUddin,
   },
   {
     id: 3,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium commodi amet ipsum omnis dignissimos.",
-    name: "Mahmudul Hasan",
-    title: "Junior Graphic Designer",
+      "Doing real estate business without business card was difficult for me. I found a business card template here and modified by the design owner. The designer did a fantastic job for me. Thanks...",
+    name: "Charles A. Cameron",
+    title: "Blue Real Esate",
     photo: MahmudulHasan,
-  },
-  {
-    id: 6,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium commodi amet ipsum omnis dignissimos.",
-    name: "Raihan Uddin",
-    title: "Junior Graphic Designer",
-    photo: DelowerHossain,
-  },
-  {
-    id: 8,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium commodi amet ipsum omnis dignissimos.",
-    name: "2 Mahmudul Hasan",
-    title: "Junior Graphic Designer",
-    photo: RaihanUddin,
   },
 ];
 
@@ -83,12 +70,12 @@ const Testimonial = () => {
               slidesPerView: 2,
             },
           }}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 1500,
+          //   disableOnInteraction: false,
+          // }}
           pagination={true}
-          modules={[Autoplay, Pagination]}
+          modules={[Pagination]}
           className="mt-20 grid gap-10 lg:gap-4 gird-cols-1 lg:grid-cols-3 translate-y-36 opacity-0 gsapTrigger4"
         >
           {TestimonialData.map((item, index: number) => (
@@ -110,27 +97,29 @@ export default Testimonial;
 // Card compoent
 const Card = ({ data }: any) => {
   return (
-    <div className="max-w-[450px] mt-10 bg-white text-accent border border-neutral shadow-xl  shadow-gray-100/50 duration-150 rounded-[30px] p-7 relative">
+    <div className="max-w-[450px] h-[326px] mt-10 bg-white text-accent border border-neutral shadow-xl  shadow-gray-100/50 duration-150 rounded-[30px] p-7 relative">
       <div className="p-5 -mt-14 w-fit mx-auto bg-primary text-2xl text-white rounded-full">
         <BiSolidQuoteAltRight />
       </div>
-      <p className="py-5">{data.description}</p>
-      <div className="flex gap-4 pt-4">
-        <Image
-          className="w-[100px] h-[100px] rounded-full"
-          src={data.photo}
-          alt="Stuff"
-        />
-        <div className="mt-3">
-          <h3 className="text-lg font-semibold">{data.name}</h3>
-          <p className="mt-1">{data.title}</p>
+      <div className="h-full flex flex-col justify-between">
+        <p className="pt-4 text-sm">{data.description}</p>
+        <div className="flex gap-4 pt-4">
+          <Image
+            className="w-[100px] h-[100px] rounded-full"
+            src={data.photo}
+            alt="Stuff"
+          />
+          <div className="mt-3">
+            <h3 className="text-lg font-semibold">{data.name}</h3>
+            <p className="mt-1">{data.title}</p>
+          </div>
         </div>
       </div>
-      <Link href="#" className="absolute right-5 bottom-4">
+      {/* <Link href="#" className="absolute right-5 bottom-4">
         <div className="w-fit p-2 text-xl text-accent rounded-full border-2 border-accent/20">
           <LuArrowUpRight />
         </div>
-      </Link>
+      </Link> */}
     </div>
   );
 };

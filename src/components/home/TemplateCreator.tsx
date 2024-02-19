@@ -55,13 +55,13 @@ const TemplateCreator = () => {
             <div
               className={`${
                 currentSlide === 0 &&
-                "border-2 border-primary rounded-full relative"
+                "border-[10px] shadow-xl shadow-black/20 border-white rounded-full relative"
               }`}
             >
               <div
                 className={`${
                   currentSlide === 0
-                    ? "absolute w-[120px] h-[120px] bg-primary rounded-full animate-ping"
+                    ? "absolute w-[120px] h-[120px] bg-white rounded-full animate-ping"
                     : "hidden"
                 }`}
               ></div>
@@ -85,13 +85,13 @@ const TemplateCreator = () => {
               <div
                 className={`${
                   currentSlide === 1 &&
-                  "border-2 border-primary rounded-full relative"
+                  "border-[10px] shadow-xl shadow-black/20 border-white rounded-full relative"
                 }`}
               >
                 <div
                   className={`${
                     currentSlide === 1
-                      ? "absolute w-[120px] h-[120px] bg-primary rounded-full animate-ping"
+                      ? "absolute w-[120px] h-[120px] bg-white rounded-full animate-ping"
                       : "hidden"
                   }`}
                 ></div>
@@ -121,13 +121,13 @@ const TemplateCreator = () => {
               <div
                 className={`${
                   currentSlide === 2 &&
-                  "border-2 border-primary rounded-full relative"
+                  "border-[10px] shadow-xl shadow-black/20 border-white rounded-full relative"
                 }`}
               >
                 <div
                   className={`${
                     currentSlide === 2
-                      ? "absolute w-[120px] h-[120px] bg-primary rounded-full animate-ping"
+                      ? "absolute w-[120px] h-[120px] bg-white rounded-full animate-ping"
                       : "hidden"
                   }`}
                 ></div>

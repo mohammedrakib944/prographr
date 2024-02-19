@@ -102,13 +102,17 @@ const Navbar = () => {
           <Link href="/sign-in" className="min-w-fit">
             <Button
               text="Sign in"
-              className="shadow-none bg-primary/20 hover:bg-primary/30"
-              icon={<FiArrowRight />}
+              className="shadow-none px-8 bg-primary/20 hover:bg-primary/30"
+              // icon={<FiArrowRight />}
               outline
             />
           </Link>
           <Link href="/sign-up-as" className="min-w-fit">
-            <Button text="Sign up" icon={<FiArrowRight />} />
+            <Button
+              className="px-8"
+              text="Sign up"
+              //  icon={<FiArrowRight />}
+            />
           </Link>
         </div>
       </nav>

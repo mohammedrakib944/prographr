@@ -32,22 +32,24 @@ const CounterSection = () => {
   }, [inView, sells]);
 
   return (
-    <section className="layout mx-3 lg:mx-auto bg-neutral py-16 rounded-[30px] mt-24">
+    <section className="layout mx-3 lg:mx-auto bg-neutral py-16 rounded-[30px] mt-32">
       <div className="flex justify-center gap-6 lg:gap-32" ref={ref}>
         <div className="text-primary text-center">
-          <h1 className="text-2xl lg:text-5xl">{sells}+</h1>
+          <h1 className="text-2xl font-extrabold lg:text-5xl">{sells}+</h1>
           <p className="text-xs">Template sells till now</p>
         </div>
         <div className="text-primary text-center">
-          <h1 className="text-2xl lg:text-5xl">$2k+</h1>
+          <h1 className="text-2xl font-extrabold lg:text-5xl">$2k+</h1>
           <p className="text-xs">Funds clear to sellers</p>
         </div>
         <div className="text-primary text-center">
-          <h1 className="text-2xl lg:text-5xl">{templates}+</h1>
+          <h1 className="text-2xl font-extrabold lg:text-5xl">{templates}+</h1>
           <p className="text-xs">Premium templates</p>
         </div>
         <div className="text-primary text-center">
-          <h1 className="text-2xl lg:text-5xl">{freeTemplates}+</h1>
+          <h1 className="text-2xl font-extrabold lg:text-5xl">
+            {freeTemplates}+
+          </h1>
           <p className="text-xs">Free template</p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 .wrapper {
   margin-top: -50px;
   display: flex;
-  height: 750px;
+  height: 680px;
   overflow: hidden;
   padding: 0;
   -webkit-mask: linear-gradient(
@@ -30,7 +30,7 @@
 }
 
 .scrolling {
-  animation: infScroll 25s linear infinite backwards;
+  animation: infScroll 35s linear infinite backwards;
 }
 
 @keyframes infScroll {
@@ -40,7 +40,7 @@
 }
 .scrolling2 {
   margin-left: 20px;
-  animation: infScroll 20s linear infinite backwards;
+  animation: infScroll 28s linear infinite backwards;
 }
 
 @keyframes infScroll {
@@ -51,7 +51,7 @@
 
 .scrolling3 {
   margin-left: 20px;
-  animation: infScroll 25s linear infinite backwards;
+  animation: infScroll 35s linear infinite backwards;
 }
 
 @keyframes infScroll {

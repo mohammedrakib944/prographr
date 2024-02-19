@@ -4,14 +4,12 @@ import { IoSearchOutline } from "react-icons/io5";
 const SearchBar = () => {
   return (
     <div className="bg-neutral">
-      <div className="max-w-[700px] mx-auto px-4 flex flex-col items-center gap-4 pt-12 lg:pt-20">
+      <div className="max-w-[700px] lg:h-[780px] mx-auto px-4 flex flex-col items-center justify-center gap-4">
         <p className="w-fit text-sm font-semibold border border-black rounded-full px-4 py-1">
           Shop Templates
         </p>
-        <h1 className="text-4xl lg:text-6xl font-bold text-center">
-          High quality templates
-          <br />
-          designed to perfection
+        <h1 className="text-4xl lg:text-7xl font-bold text-center">
+          A template <br /> that match your business
         </h1>
         <p className="max-w-[550px] text-center text-gray-500 text-lg py-4">
           Find and download the best high-quality 3D and vector illustrations,

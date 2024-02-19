@@ -25,7 +25,10 @@ const MakeUsBetter = () => {
           <HomeCard
             title="Creativity"
             icon={Creativity}
-            para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus temporibus maxime."
+            para="We are about pushing boundaries, exploring
+            possibilities, and ultimately delivering designs that are
+            not only visually striking but also functional,
+            meaningful, and impactful."
             link=""
           />
         </div>
@@ -33,7 +36,8 @@ const MakeUsBetter = () => {
           <HomeCard
             title="Team Collaboration"
             icon={TeamCollaboration}
-            para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus temporibus maxime."
+            para="Working together effectively and efficiently to achieve
+            common goals or objectives of any business."
             link=""
           />
         </div>
@@ -41,7 +45,9 @@ const MakeUsBetter = () => {
           <HomeCard
             title="Professionalism"
             icon={Professionalism}
-            para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus temporibus maxime."
+            para="Professional designers collaborate closely with clients
+            to understand their goals, preferences, and
+            requirements"
             link=""
           />
         </div>

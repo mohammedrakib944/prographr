@@ -4,6 +4,7 @@ import Button from "../common/Button";
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
 import Tools from "@/assets/tools.jpg";
+import { FaPlay } from "react-icons/fa";
 import useScrollTrigger from "@/hooks/useScrollTrigger";
 
 function buttonStyle(current: number, slideNo: number) {
@@ -28,19 +29,19 @@ const Cuttingedge = () => {
             Collect <strong> Ideas</strong>
           </h2>
           <p className="py-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-            ullam tempora animi ab praesentium recusandae rerum. Maiores, quas
-            rerum. Non dolore aliquam beatae.
+            Doing regular brainstorming sessions with colleagues, friends, or
+            peers for offering a wide range of possibilities for creative
+            exploration and expression.
           </p>
 
           <ul className="list-disc ml-4">
             <li>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-              repellendus!
+              Start with a central concept or problem and branch out with
+              related ideas and connections.
             </li>
             <li className="mt-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-              repellendus!
+              Make connections between unrelated concepts to generate fresh
+              ideas.
             </li>
           </ul>
           <br />
@@ -51,11 +52,11 @@ const Cuttingedge = () => {
           />
         </div>
         <div className="flex lg:justify-end">
-          <Image
-            className="max-w-[400px] opacity-65 w-fit rounded-[30px] border p-5"
-            src={Tools}
-            alt="Tools"
-          />
+          <div className="w-[300px] h-[150px] lg:w-[500px] lg:h-[300px] bg-neutral rounded-[25px] flex items-center justify-center">
+            <button className="text-4xl text-primary hover:scale-110 duration-200">
+              <FaPlay />
+            </button>
+          </div>
         </div>
       </div>
     );
