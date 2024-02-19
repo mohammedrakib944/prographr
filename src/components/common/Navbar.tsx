@@ -16,11 +16,11 @@ const NavLinks = [
   },
   {
     text: "Company",
-    link: "#",
+    link: "/company",
   },
   {
     text: "Contact Us",
-    link: "#",
+    link: "/contact",
   },
 ];
 

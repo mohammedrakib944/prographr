@@ -2,8 +2,6 @@
 import React, { useRef, useState } from "react";
 import Button from "../common/Button";
 import { FiArrowUpRight } from "react-icons/fi";
-import Image from "next/image";
-import Tools from "@/assets/tools.jpg";
 import { FaPlay } from "react-icons/fa";
 import useScrollTrigger from "@/hooks/useScrollTrigger";
 
