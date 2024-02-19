@@ -14,7 +14,7 @@ const page = () => {
     <div>
       <SearchBar />
       <TopSelling />
-      <Newest />
+      {/* <Newest /> */}
       <FreeTemp />
       <div className="mx-4 pt-20">
         <div className="layout rounded-[30px] bg-primary flex justify-between">

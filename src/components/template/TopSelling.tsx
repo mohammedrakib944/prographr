@@ -51,8 +51,16 @@ const TopSelling = () => {
 
       <div
         ref={container}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6"
       >
+        {CardData.map((item) => (
+          <div
+            className="translate-y-10 opacity-0 templateScrollTrigger"
+            key={item.id}
+          >
+            <TempCard data={item} />
+          </div>
+        ))}
         {CardData.map((item) => (
           <div
             className="translate-y-10 opacity-0 templateScrollTrigger"
