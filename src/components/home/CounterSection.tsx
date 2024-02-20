@@ -32,7 +32,7 @@ const CounterSection = () => {
   }, [inView, sells]);
 
   return (
-    <section className="layout mx-3 lg:mx-auto bg-neutral py-16 rounded-[30px] mt-32">
+    <section className="layout mx-3 lg:mx-auto bg-neutral py-16 rounded-[30px] mt-32 lg:mt-48">
       <div className="flex justify-center gap-6 lg:gap-32" ref={ref}>
         <div className="text-primary text-center">
           <h1 className="text-2xl font-extrabold lg:text-5xl">{sells}+</h1>
